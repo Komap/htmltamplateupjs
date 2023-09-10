@@ -1,0 +1,23 @@
+/* @import url(/src/scss/header/header.scss); */
+
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #262C34;
+    
+}
+
+/*flex: 0 0 500px/1280 * 100%
+*flex-wrap-wrap - ломает элементы, если они большие
+* justify-content: space-evenly; составит примерно половину размера пространства на краях. 
+
+* any-hover : hover - используется только для тех экранов где есть мышь 
+* pointer-event: none;  - когда скрыто подменю,<li class="menu__item">
+* pointer-event: auto; - когда Открыто подменю 
+<ul class="menu__sub-list">
+
+margin: 0px 0px 32px/40px *1em 0px;
+
+*/

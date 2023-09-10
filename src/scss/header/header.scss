@@ -1,0 +1,195 @@
+
+.header{
+    background: #262C34;
+   
+}
+
+.header__body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    text-decoration: none;
+    width: 371px;
+    align-items: center;
+    
+}
+
+.header-title{
+    margin-left: 20px;
+}
+
+
+.logo__title_white{
+    font-family:Ubuntu-medium;
+    font-size: 25px;
+}
+
+.logo__title_yellow{ 
+    font-family:Ubuntu-regular;
+    color: $btns;
+   // @extend .logo__title_white
+}
+
+.header__bottom{
+    display: flex;
+
+    margin-top: 28px;
+}
+
+.header__btn-top{
+    display: flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    background-color: $btns;
+    border-radius: 5px;
+    font-family:Ubuntu-bold;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $btnCall;
+    border: 0;
+    &::after{
+
+    }
+}
+
+.header__select{
+    background-color: $btns;
+    font-family:Ubuntu-bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 19px 0 19px 26px;
+    background: #FFB701;
+    border-radius: 10px;
+    cursor: pointer;
+    svg{
+        padding: 0 26.5px 0 15px;
+    }
+}
+
+.header__search{
+    display: inline-flex;
+    position: relative;
+}
+
+input.form-serch__search{
+    border: none;
+    border-radius: 10px;
+    background: #3F4A58;
+    outline: none;
+    padding: 14px 30px 15px 20px;
+    color: #9CA7B5;
+    font-family: Ubuntu-regular;
+    font-size: 20px;
+    width: 337px;
+    margin-left: 20px;
+    &::placeholder{
+        color: #9CA7B5;
+        font-family: Ubuntu-regular;
+        font-size: 20px;
+        // padding: 14px 0 15px 20px;
+    }
+    &::-webkit-clear-button {
+        display: none;
+        width : 0; height: 0;
+      }
+
+}
+
+
+
+.form-serch__btn{
+    position: absolute;
+    right: 20px;
+    background: url(../../img/header-icon-search.png) no-repeat;
+    width: 22px;
+    height: 22px;   
+    cursor: pointer;
+    border: 0;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.form-serch__icon{
+    display: block;
+    
+}
+
+.header__contact{
+    align-self: center;
+    display: flex;
+    margin-left: 33px;
+}
+
+.icon-phone{
+    align-items: flex-start;
+    display: block;
+    background: url(../../img/header-phone.png) no-repeat;
+    width: 17px;
+    height: 17px;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.header__contact_wite{
+    font-family: Ubuntu-bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header__contact-gray{
+    padding-top: 3px;
+    font-family: Ubuntu-medium;
+    color: #898088;
+    font-size: 14px;
+}
+
+.icons__icon{
+    display: inline-block;
+}
+
+.header__icons{
+    display: flex;
+    // gap:40px;
+     margin-left: 165px;
+    li{
+        display: inline-block;
+    }
+}
+
+.header__icons-plus{
+    background: url(../../img/icon-plus-minus.png) no-repeat;
+    width: 45px;
+    height: 45px;
+}
+
+.header__icons-heart{
+    width: 50px;
+    height: 45px;
+    background: url(../../img/icon-heart.png) no-repeat;
+}
+
+.header__icons-busket{
+    @extend .header__icons-heart;
+    background: url(../../img/icon-busket.png) no-repeat;
+}
+
+.header__icons-profile{
+    width: 39px;
+    height: 39px;
+    background: url(../../img/icon-profile.png) no-repeat;
+    align-self: center;
+}

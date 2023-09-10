@@ -1,0 +1,270 @@
+@font-face {
+  font-family: ArnoPro BoldItalic36pt;
+  font-display: swap;
+  src: url("../fonts/ArnoPro BoldItalic36pt.woff2") format("woff2"), url("../fonts/ArnoPro BoldItalic36pt.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: DynaGroteskLM Bold;
+  font-display: swap;
+  src: url("../fonts/DynaGroteskLM Bold.woff2") format("woff2"), url("../fonts/DynaGroteskLM Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: LeawoodStd BoldItalic;
+  font-display: swap;
+  src: url("../fonts/LeawoodStd BoldItalic.woff2") format("woff2"), url("../fonts/LeawoodStd BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu-bold;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu-ligth;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu-medium;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu-regular;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  background: #262C34;
+}
+
+.header__body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  width: 371px;
+  align-items: center;
+}
+
+.header-title {
+  margin-left: 20px;
+}
+
+.logo__title_white {
+  font-family: Ubuntu-medium;
+  font-size: 25px;
+}
+
+.logo__title_yellow {
+  font-family: Ubuntu-regular;
+  color: #FFB701;
+}
+
+.header__bottom {
+  display: flex;
+  margin-top: 28px;
+}
+
+.header__btn-top {
+  display: flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB701;
+  border-radius: 5px;
+  font-family: Ubuntu-bold;
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #262C34;
+  border: 0;
+}
+.header__select {
+  background-color: #FFB701;
+  font-family: Ubuntu-bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  padding: 19px 0 19px 26px;
+  background: #FFB701;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.header__select svg {
+  padding: 0 26.5px 0 15px;
+}
+
+.header__search {
+  display: inline-flex;
+  position: relative;
+}
+
+input.form-serch__search {
+  border: none;
+  border-radius: 10px;
+  background: #3F4A58;
+  outline: none;
+  padding: 14px 30px 15px 20px;
+  color: #9CA7B5;
+  font-family: Ubuntu-regular;
+  font-size: 20px;
+  width: 337px;
+  margin-left: 20px;
+}
+input.form-serch__search::placeholder {
+  color: #9CA7B5;
+  font-family: Ubuntu-regular;
+  font-size: 20px;
+}
+input.form-serch__search::-webkit-clear-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.form-serch__btn {
+  position: absolute;
+  right: 20px;
+  background: url(../../img/header-icon-search.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: 0;
+  align-self: center;
+  padding-right: 20px;
+}
+
+.form-serch__icon {
+  display: block;
+}
+
+.header__contact {
+  align-self: center;
+  display: flex;
+  margin-left: 33px;
+}
+
+.icon-phone {
+  align-items: flex-start;
+  display: block;
+  background: url(../../img/header-phone.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.header__contact_wite {
+  font-family: Ubuntu-bold;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header__contact-gray {
+  padding-top: 3px;
+  font-family: Ubuntu-medium;
+  color: #898088;
+  font-size: 14px;
+}
+
+.icons__icon {
+  display: inline-block;
+}
+
+.header__icons {
+  display: flex;
+  margin-left: 165px;
+}
+.header__icons li {
+  display: inline-block;
+}
+
+.header__icons-plus {
+  background: url(../../img/icon-plus-minus.png) no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.header__icons-heart, .header__icons-busket {
+  width: 50px;
+  height: 45px;
+  background: url(../../img/icon-heart.png) no-repeat;
+}
+
+.header__icons-busket {
+  background: url(../../img/icon-busket.png) no-repeat;
+}
+
+.header__icons-profile {
+  width: 39px;
+  height: 39px;
+  background: url(../../img/icon-profile.png) no-repeat;
+  align-self: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: medium;
+  color: #fff;
+  border: 0;
+}
+
+body {
+  background-color: #504d4d;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration {
+  display: none;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.pp {
+  font-family: DynaGroteskLM Bold;
+}
+
+@media (max-width: 767px) {
+  .box {
+    color: #000;
+  }
+}

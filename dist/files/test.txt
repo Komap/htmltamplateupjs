@@ -1,0 +1,19 @@
+There are 3 things you need to do to make gulp work with ES6 imports:
+
+Rename gulpfile.js to gulpfile.babel.js
+
+Run this command:
+
+npm i @babel/preset-env @babel/register -D
+Add a .babelrc file to the root folder of your project with the following code in it:
+{
+  "presets": [
+    "@babel/preset-env"
+  ]
+}
+
+ГАЛП
+https://stackoverflow.com/questions/43681396/syntaxerror-unexpected-token-import-import-as-gulp-from-gulp
+
+ВРОДЕ РЕАКТ 
+https://stackoverflow.com/questions/43042889/typescript-referenceerror-exports-is-not-defined
