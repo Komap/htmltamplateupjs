@@ -1,6 +1,11 @@
 @import 'fonts.scss';
 @import 'vars/vars.scss';
 @import 'header/header.scss';
+@import 'main/main.scss';
+@import '../../node_modules/swiper/swiper.scss';
+
+
+
 
 *{
     margin: 0;
@@ -12,7 +17,8 @@
 }
 
 body{
-    background-color: #504d4d;
+    // background-color: #504d4d;
+    background: #525252;
 }
 
 input{
@@ -33,6 +39,7 @@ ul,ol{
 
 .wrapper{
     max-width: 100%;
+
 }
 
 
@@ -45,3 +52,4 @@ ul,ol{
         color: #000;
     }
 }
+

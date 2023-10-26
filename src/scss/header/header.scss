@@ -37,6 +37,7 @@
 .logo__title_yellow{ 
     font-family:Ubuntu-regular;
     color: $btns;
+    text-transform: uppercase;
    // @extend .logo__title_white
 }
 
@@ -66,20 +67,27 @@
 }
 
 .header__select{
-    background-color: $btns;
+    background: $btns;
+    height: 54px;
     font-family:Ubuntu-bold;
     text-transform: uppercase;
     color: #fff;
     font-size: 16px;
-    padding: 19px 0 19px 26px;
-    background: #FFB701;
+    padding: 0 26.5px 0 26px;
     border-radius: 10px;
     cursor: pointer;
+    box-sizing: border-box;
     svg{
-        padding: 0 26.5px 0 15px;
+        //padding: 0 26.5px 0 15px;
+        margin-left: 15px;
+    }
+    .arrow-up{
+        transform: rotate(180deg);
     }
 }
-
+.arrow-down{
+    transform: rotate(0deg);
+}
 .header__search{
     display: inline-flex;
     position: relative;
@@ -163,8 +171,9 @@ input.form-serch__search{
 
 .header__icons{
     display: flex;
-    // gap:40px;
-     margin-left: 165px;
+    gap:40px;
+    margin-left: auto;
+    align-items: center;
     li{
         display: inline-block;
     }
@@ -191,5 +200,16 @@ input.form-serch__search{
     width: 39px;
     height: 39px;
     background: url(../../img/icon-profile.png) no-repeat;
-    align-self: center;
+    width: 54px;
+    display: flex;
+    justify-content: flex-end;
+    &::after{
+        content: "";
+        background: url(../../img/login-arrow.png);
+        display: block;
+        width: 10px;
+        height: 5px;
+        align-self: center;
+    }
 }
+

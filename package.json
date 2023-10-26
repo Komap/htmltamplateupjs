@@ -1,11 +1,10 @@
-
 {
   "name": "gulp-2",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "dev": "gulp" , 
+    "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZip --build",
     "deploy": "gulp deployFtp --build",
@@ -47,7 +46,7 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.52.3",
-    "swiper": "^8.2.4",
+    "swiper": "^8.4.7",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
     "webpack": "^5.73.0",

@@ -3,10 +3,12 @@
     @@include('./html_template/head.html', {"title": "main page"})
     <body>
         <div class="wrapper">
+            
             @@include('./html_template/header.html', {})
-            <main>
-            </main>
+            @@include('./html_template/main.html', {})
+            <!-- <main></main> -->
             @@include('./html_template/footer.html', {})
+
         </div>
     <script src="js/app.min.js"></script>
     </body>
